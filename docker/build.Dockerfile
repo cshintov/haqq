@@ -27,7 +27,7 @@ COPY --from=build-env /go/src/github.com/haqq-network/haqq/build/haqqd /usr/bin/
 
 RUN apk add --no-cache \
     ca-certificates=20230506-r0 jq=~1.6 \
-    curl=~8.3 bash=~5.2 \
+    curl=~8.4 bash=~5.2 \
     vim=~9.0 lz4=~1.9 \
     tini=~0.19 \
     && addgroup -g 1000 haqq \
